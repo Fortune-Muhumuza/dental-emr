@@ -1,0 +1,26 @@
+{
+  "name": "dental-record-system",
+  "version": "1.0.0",
+  "description": "Record system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fortune-Muhumuza/dental-record-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fortune-Muhumuza/dental-record-system/issues"
+  },
+  "homepage": "https://github.com/Fortune-Muhumuza/dental-record-system#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "pug": "^3.0.0"
+  }
+}

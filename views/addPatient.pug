@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+  body
+    h1 Patient data
+    form(action='/addPatient' method="post")
+
+      label Name:
+      
+      input(type='text' required="true" name='name')
+      br
+      label Age:
+      
+      input(type='number' required="true" name='age')
+      br
+      
+      label(for='gender') Sex
+      select(name='gender')
+        option(value='M') M
+        option(value='F') F
+      br
+      label Address:
+      
+      input(type='text' required="true" name='address')
+      br
+      
+      label Diagnosis:
+      
+      input(type='text' required="true" name='diagnosis')
+      br
+      
+      label Treatment:
+      
+      input(type='text' required="true" name='treatment')
+      br
+      br
+      label Prescription:
+      
+      input(type='text' required="true" name='prescription')
+      br
+      
+      label TCA:
+      
+      input(type='date' required="true" name='tca')
+      br
+      
+      label Contact:
+      
+      input(type='number' required="true" name='contact')
+      br
+      
+      input(type='submit' value='Save')

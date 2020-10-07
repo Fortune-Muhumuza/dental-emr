@@ -1,0 +1,36 @@
+doctype html
+
+html
+    head
+         
+        meta(charset='UTF-8')
+        title #{title}
+        link(rel='stylesheet' href='/css/style.css')
+    body
+        h1 Aroma Medical Center Dental Department
+        h2 Total Patients treated =
+        table(id="patients")
+            tbody
+                tr
+                    th Name
+                    th Age
+                    th Gender
+                    th Address
+                    th Diagnosis
+                    th Treatment
+                    th Prescription
+                    th Date seen
+                    th TCA
+                    th Contact
+            each patient in patients        
+                tr
+                    td= patient.patientName
+                    td= patient.patientAge
+                    td= patient.patientGender
+                    td= patient.patientAddress
+                    td= patient.patientDiagnosis
+                    td= patient.patientTreatment
+                    td= patient.patientPrescription
+                    td= patient.patientVisitDate
+                    td= patient.patientTCA                    
+                    td= patient.patientContact
